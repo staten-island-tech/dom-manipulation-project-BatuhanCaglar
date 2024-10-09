@@ -21,7 +21,7 @@ h1{
 
 
 h2 {
-    color: darkslateblue;
+    color: gold;
 
     font-family: "Handjet", sans-serif;
     font-optical-sizing: auto;
@@ -32,9 +32,9 @@ h2 {
     margin-bottom: 2%;
 }
 
-.input-card{
-    background-color: white;
-    border: solid brown;
+.inputcard{
+    background-color: rgb(25, 30, 89);
+    border: solid rgb(42, 67, 165);
     border-width: 1.5rem;
     border-radius: 3.25rem;
 
