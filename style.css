@@ -32,14 +32,88 @@ h2 {
     margin-bottom: 2%;
 }
 
+
 .inputcard{
     background-color:darkblue;
+
     border: solid rgb(10, 10, 94);
     border-radius: 2rem;
     border-width: 1.5rem; 
+
+    width: 55%;
+    height: auto;
+    min-height: 25rem;
+    min-width: 35rem;
+    flex-shrink: 0;
+
+    margin: 5% auto;
+    margin-top: 3%;
+    padding: 2.5rem;
+    padding-top: 1rem;
 }
 
-.questions{
+.form{
+
+    background-color: black;
+    border: solid rgb(10, 10, 94);
+    border-radius: 2rem;
+    border-width: 1.5rem; 
+    padding: 1.25rem;
+
+
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+    color: aliceblue;
+    text-align: center;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; 
+}
+
+
+p{
+    font-family: "Handjet", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: gold;
+    text-align: center;
+    font-size: 1.85rem;
 
 }
-    
+
+button{
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.85rem;
+
+    border-radius: 2rem;
+
+
+    color: black;
+    text-align: center;
+    margin: 0.75rem; 
+    padding: 0.5rem;
+}
+
+input{
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.85rem;
+
+
+    border-radius: 2rem;
+
+
+    color: black;
+    margin: 0.75rem; 
+    padding: 0.5rem;
+}
