@@ -13,63 +13,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-
-
 </head>
+
 <body>
-    <h1>ELDEN CREATE</h1>
+    <h1>ELDENCREATE</h1>
 
     <div class="inputcard">
         <h2>WHAT THE ELDEN</h2>
-            <form class= "form">
-                <div class="form-group"> 
-                    <p for="item">Enter in an item</p>
-                    <input type="text">
-                    <button class="item-in" type="submit">Submit</button>
-                </div>
 
-                <div class="form-group"> 
-                    <p for="type">What type of item is it</p>
-                    <input type="text">
-                    <button class="type-in" type="submit">Submit</button>
-                </div>
+        <form action="" class="form">
+            <div class="form-group"> 
+                <p for="item">Enter in an item</p>
+                <input type="text" name="item">
 
-                <div class="form-group">
-                    <p for="img">Enter in an image link</p>
-                    <input type="text">
-                    <button class="image-in" type="submit">Submit</button>
-                </div>
-            </form>
+                <p for="type">What type of item is it</p>
+                <input type="text" name="type">
+
+                <p for="img">Enter in an image link</p>
+                <input type="text" name="image">
+                <button class="inputs" type="submit">Submit</button>
+            </div>
+        </form>
     </div>
 
     <div class="inputorganizer">
         <h2>THE STUFFF</h2>
 
+        <div id="stuffContainer"></div>
         <!---<div class = "card"><h2>card header</h2></div>--->
     </div>
 
-    <form class= "form">
-        <div class="form-group"> 
-            <p for="item">Enter in an item</p>
-            <input type="text">
-            <button class="item-in" type="submit">Submit</button>
-        </div>
-
-        <div class="form-group"> 
-            <p for="type">What type of item is it</p>
-            <input type="text">
-            <button class="type-in" type="submit">Submit</button>
-        </div>
-
-        <div class="form-group">
-            <p for="img">Enter in an image link</p>
-            <input type="text">
-            <button class="image-in" type="submit">Submit</button>
-        </div>
-    </form>
-
-
-
+    
     <script src="index.js"></script>
 </body>
 </html>

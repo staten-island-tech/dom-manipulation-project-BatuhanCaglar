@@ -1,18 +1,20 @@
-const DOMSelectors = {
-  header: document.querySelector("h1"),
-  subheader: docoment.querySelector("h2"),
-  inputcard: document.querySelector(".inputcard"),
-  form: document.querySelector(".form"),
-  formgroup: document.querySelector(".form-group"),
-  label: document.querySelector(".p"),
-  button: document.querySelector(".button"),
-  items: document.querySelector(".item-in"),
-  types: document.querySelector(".type-in"),
-  images: document.querySelector(".image-in"),
-  organizer: document.querySelector(".inputorganizer"),
-};
+document.addEventListener("DOMContentLoaded", function() {
+    const DOMSelectors = {
+        form: document.querySelector("form"),
+        itemInput: document.querySelector('input[name="item"]'),
+        typeInput: document.querySelector('input[name="type"]'),
+        imageInput: document.querySelector('input[name="image"]'),
+        button: document.querySelector("button")
+    };
 
-DOMSelectors.form.addEventListener("submit", function (event) {
-  event.preventDefault(); 
-  console.log(document.querySelector("input").value);
+    DOMSelectors.form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        console.log(DOMSelectors.itemInput.value); 
+        console.log(DOMSelectors.typeInput.value);
+        console.log(DOMSelectors.imageInput.value);
+    });
+
+    const itemValue = DOMSelectors.itemInput.value;
+    const typeValue = DOMSelectors.typeInput.value;
+    const imageValue = DOMSelectors.imageInput.value;
 });

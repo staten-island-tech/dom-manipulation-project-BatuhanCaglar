@@ -37,3 +37,4 @@ DOMSelectors.container.insertAdjacentHTML(
   "beforeend",
   `<div class = "card"><h2 class = "card-header">${movie.title}</h2></div>`
 );
+

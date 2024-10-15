@@ -99,8 +99,9 @@ button{
 
     color: black;
     text-align: center;
-    margin: 0.75rem; 
+    margin: 1rem; 
     padding: 0.5rem;
+    display: block;
 }
 
 input{
@@ -117,3 +118,16 @@ input{
     margin: 0.75rem; 
     padding: 0.5rem;
 }
+
+.stuff-box {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+  
+  .stuff-box img {
+    display: block;
+    margin-top: 10px;
+  }
