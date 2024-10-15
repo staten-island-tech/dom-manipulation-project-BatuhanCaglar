@@ -28,7 +28,7 @@ h2 {
     font-size: 5.5rem ;
 
     text-align: center;
-    margin-top: 2%;
+    margin-top: 1%;
     margin-bottom: 2%;
 }
 
@@ -119,15 +119,49 @@ input{
     padding: 0.5rem;
 }
 
-.stuff-box {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-  }
-  
-  .stuff-box img {
+
+.inputorganizer{
+    background-color: azure;
+    border-radius: 4rem;
+    border: solid 1.5rem gold;
+    width: 85vw;
+    height: auto;
+    margin-top: 5rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;    
+    display: flex;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+    
+.stuffcontainer {
+    background-color: slateblue;
+    border-radius: 4rem;
+    border: solid 1.5rem darkslateblue;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    align-items: flex-start; 
+    padding: 2rem;
+    gap: 1rem; 
+    width: 22%;
+    height: 35%;
+    flex-shrink: 0;
+    min-width: 30rem;
+    min-height: 45rem;    
+    margin-top: 5rem;
+}
+
+h3{
+    color: gold;
+
     display: block;
-    margin-top: 10px;
-  }
+    font-family: "Handjet", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 5.5rem ;
+
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
