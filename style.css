@@ -121,9 +121,10 @@ input{
 
 
 .inputorganizer{
-    background-color: azure;
+    background-color: brown;
     border-radius: 4rem;
-    border: solid 1.5rem gold;
+    border: solid 0.75rem darkred;
+
     width: 85vw;
     height: auto;
     margin-top: 5rem;
@@ -131,26 +132,24 @@ input{
     justify-content: space-evenly;
     flex-wrap: wrap;    
     display: flex;
+    align-items: center;
     margin-left: 7%;
     margin-right: 7%;
+    text-align: center;
+
 }
     
 .stuffcontainer {
     background-color: slateblue;
     border-radius: 4rem;
     border: solid 1.5rem darkslateblue;
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-around; 
-    align-items: flex-start; 
-    padding: 2rem;
-    gap: 1rem; 
-    width: 22%;
-    height: 35%;
-    flex-shrink: 0;
+
+    width: 26%;
+    height: auto;
     min-width: 30rem;
-    min-height: 45rem;    
-    margin-top: 5rem;
+    min-height: 45rem;  
+
+    margin: ;
 }
 
 h3{
