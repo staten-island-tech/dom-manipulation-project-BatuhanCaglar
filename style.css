@@ -30,6 +30,7 @@ h2 {
     text-align: center;
     margin-top: 1%;
     margin-bottom: 2%;
+    transition: transform 0.5s ease-in-out;
 }
 
 
@@ -83,6 +84,7 @@ p{
     color: gold;
     text-align: center;
     font-size: 1.85rem;
+    transition: transform 0.5s ease-in-out;
 
 }
 
@@ -101,6 +103,20 @@ button{
     display: block;
 }
 
+button:hover{
+    transition-duration: 0.2s;
+    background-color: gold;
+    transform: scaleY(1.2);
+}
+
+button:active{
+    transition-duration: 0.2s;
+    background-color: goldenrod;
+    transform: scaleX(1.2);
+}
+
+
+
 input{
     font-family: "Rajdhani", sans-serif;
     font-weight: 300;
@@ -116,60 +132,111 @@ input{
 
 
 .inputorganizer{
-    background-color:darkblue;
-
-    border: solid rgb(10, 10, 94);
-    border-radius: 2rem;
-    border-width: 1.5rem; 
-
-    width: 85vw;
-    height: auto;
-    margin-top: 5rem;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;    
-    display: flex;
-    margin-left: 7%;
-    margin-right: 7%;
-    text-align: center;
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    grid-gap: 1rem; /* Adds some space between the items */
     background-color: slateblue;
     border: solid darkslateblue;
     border-radius: 2rem;
     border-width: 1.5rem;
-    padding: 1rem; /* Add padding if needed */
-}
-    
-      
-
-    
-.stuffcontainer {
-    background-color:slateblue;
-
-    border: solid darkslateblue;
-    border-radius: 2rem;
-    border-width: 1.5rem;
-
-    width:95%;
+ 
+    width: 85vw;
     height: auto;
-    min-width: 30rem;
-    min-height: 45rem;  
+    margin-top: 5rem;       
+    margin-left: 7%;
+    margin-right: 7%;
+    padding: 1rem;
 
-    margin: ;
+    display: flex;
+    flex-wrap: wrap;    
+    flex-direction: row;
+
+    justify-content: space-evenly;
+
 }
 
-h3{
+.stuffcontainer {
+    background-color: white;
+    border: solid 1.5px aliceblue;
+    border-radius: 1rem;
+
+    width: 90%;
+    max-width: 40rem;
+    padding: 2.5rem;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center; 
+
+}
+
+.stuffcontainer img {
+    width: 75%; 
+    height: auto;
+    border-radius: 0.5rem;
+    margin-top: 15rem;
+    margin: auto;
+}
+
+
+.stuffcontainer h3 {
+    font-family: 'Handjet', sans-serif;
     color: gold;
+    margin: 0.5rem 0;
+    font-size: 4.5rem;
+}
+
+.remove-button {
+    background-color: slateblue;
+    color: white;
+
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
 
     display: block;
-    font-family: "Handjet", sans-serif;
-    font-optical-sizing: auto;
-    font-size: 4.5rem ;
+    margin-top: 1rem;
+    width: 75%; 
+    margin: auto;
+    margin-top: 2.5rem;
 
-    text-align: center;
-    margin-top: 1%;
-    margin-bottom: 2%;
 }
+
+.remove-button:hover {  
+    background-color: darkslateblue;
+    transition-duration: 0.2s;
+    transform: scaleY(1.2);
+    animation: ease-in-out;
+}
+
+.cardheader:hover{
+    transition-duration: 0.3s;
+    transform: scaleX(1.2);
+}
+
+p:hover{
+    transition-duration: 0.3s;
+    transform: scaleX(1.2);
+}
+
+
+img:hover {
+    animation: rotateScale 2.25s ease-in-out;
+}
+
+@keyframes rotateScale {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.075) rotate(20deg);
+    }
+    50% {
+        transform: scale(1.1) rotate(-20deg);
+    }
+    75% {
+        transform: scale(1.15) rotate(20deg);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
