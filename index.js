@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const removeButton = document.createElement("button");
       removeButton.textContent = "Remove";
       removeButton.classList.add("remove-button");
-      newDiv.appendChild(removeButton);s
+      newDiv.appendChild(removeButton);
 
       DOMSelectors.stuffContainer.appendChild(newDiv);
 

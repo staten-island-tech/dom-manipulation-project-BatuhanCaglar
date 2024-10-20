@@ -115,7 +115,6 @@ button:active{
     transform: scaleX(1.2);
 }
 
-
 input{
     font-family: "Rajdhani", sans-serif;
     font-weight: 300;
@@ -129,37 +128,49 @@ input{
     padding: 0.5rem;
 }
 
-
-.inputorganizer{
+.inputorganizer {
     background-color: slateblue;
     border: solid darkslateblue;
     border-radius: 2rem;
     border-width: 1.5rem;
- 
+
     width: 85vw;
     height: auto;
-    margin-top: 5rem;       
+
+    margin-top: 5rem;
     margin-left: 7%;
     margin-right: 7%;
+
     padding: 1rem;
 
     display: flex;
-    flex-wrap: wrap;    
-    justify-content: space-evenly;
-
+    flex-wrap: wrap;  
+    justify-content: space-between; 
 }
 
-.stuffcontainer {
+#stuffContainer {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 3rem; 
+    justify-content: space-evenly; 
+}
+
+#stuffContainer > div {
+    flex: 28%; 
+    max-width: 28%; 
+    min-width: 35rem;
+    margin: 0; 
+    box-sizing: border-box; 
+
+
     background-color: white;
-    border: solid 1.5px aliceblue;
-    border-radius: 1rem;
-
-    width: 90%;
-    max-width: 40rem;
-    padding: 2.5rem;
-
+    padding: 1.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2.95%;
 }
 
 .stuffcontainer img {
