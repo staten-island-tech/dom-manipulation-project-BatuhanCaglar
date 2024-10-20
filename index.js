@@ -18,28 +18,23 @@ document.addEventListener("DOMContentLoaded", function () {
       const newDiv = document.createElement("div");
       newDiv.classList.add("inputorganizer", "stuffcontainer");
 
-      // Set the inner HTML for the new box with image on top
       newDiv.innerHTML = `
           <img src="${imageValue}" alt="${itemValue}" style="width: 300px; height: auto;"> <!-- Adjust image size here -->
           <h3>Item: ${itemValue}</h3>
           <h3>Type: ${typeValue}</h3>
       `;
 
-      // Add remove button to the box
       const removeButton = document.createElement("button");
       removeButton.textContent = "Remove";
       removeButton.classList.add("remove-button");
-      newDiv.appendChild(removeButton);
+      newDiv.appendChild(removeButton);s
 
-      // Add the new box to the container
       DOMSelectors.stuffContainer.appendChild(newDiv);
 
-      // Clear the input fields
       DOMSelectors.itemInput.value = "";
       DOMSelectors.typeInput.value = "";
       DOMSelectors.imageInput.value = "";
 
-      // Add event listener to remove the box when the remove button is clicked
       removeButton.addEventListener("click", function () {
           DOMSelectors.stuffContainer.removeChild(newDiv);
       });

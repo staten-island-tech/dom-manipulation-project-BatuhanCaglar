@@ -116,7 +116,6 @@ button:active{
 }
 
 
-
 input{
     font-family: "Rajdhani", sans-serif;
     font-weight: 300;
@@ -146,8 +145,6 @@ input{
 
     display: flex;
     flex-wrap: wrap;    
-    flex-direction: row;
-
     justify-content: space-evenly;
 
 }
@@ -162,7 +159,6 @@ input{
     padding: 2.5rem;
 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center; 
 
 }
 
@@ -173,7 +169,6 @@ input{
     margin-top: 15rem;
     margin: auto;
 }
-
 
 .stuffcontainer h3 {
     font-family: 'Handjet', sans-serif;
